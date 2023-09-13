@@ -1,4 +1,5 @@
 import CodeEditor from "@/components/CodeEditor";
+import ThreeCanvas from "@/components/ThreeCanvas";
 
 export default function Home() {
   return (
@@ -8,7 +9,9 @@ export default function Home() {
         <div className="flex-1 bg-gray-800">
           <CodeEditor />
         </div>
-        <div className="flex-1 p-2 bg-gray-600">3D Viewer</div>
+        <div className="flex-1 p-2 bg-gray-600">
+          <ThreeCanvas />
+        </div>
       </div>
       <div className="p-2 h-24 bg-gray-900">Console</div>
     </div>
