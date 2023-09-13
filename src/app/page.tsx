@@ -6,10 +6,10 @@ export default function Home() {
     <div className="flex flex-col h-screen">
       <div className="p-2">CadQuery Studio</div>
       <div className="flex-1 flex flex-row">
-        <div className="flex-1 bg-gray-800">
+        <div className="w-1/2 bg-gray-800">
           <CodeEditor />
         </div>
-        <div className="flex-1 p-2 bg-gray-600">
+        <div className="w-1/2 p-2 bg-gray-600">
           <ThreeCanvas />
         </div>
       </div>
