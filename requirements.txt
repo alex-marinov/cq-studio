@@ -1,1 +1,2 @@
 Flask==2.3.3
+cadquery==2.3.0
