@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"next dev\" \"FLASK_DEBUG=1 && python -m flask --app src/api/index --debug run -p 5328\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -17,6 +17,7 @@
     "@types/react-dom": "18.2.7",
     "@types/three": "^0.156.0",
     "autoprefixer": "10.4.15",
+    "concurrently": "^8.2.1",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
